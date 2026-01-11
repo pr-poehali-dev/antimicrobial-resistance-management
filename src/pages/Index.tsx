@@ -40,11 +40,8 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-              Рациональное назначение и применение противомикробных препаратов
+              Рациональное назначение и применение противомикробных препаратов: проблемы антимикробной резистентности и повышение приверженности иммунопрофилактике
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              Проблемы антимикробной резистентности и повышение приверженности иммунопрофилактике
-            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" onClick={scrollToForm} className="text-lg px-8">
                 Записаться на программу
@@ -89,21 +86,8 @@ export default function Index() {
               <Icon name="BookOpen" className="text-primary flex-shrink-0" size={32} />
               <div className="flex-1">
                 <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">О программе</h3>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  Эта программа посвящена управлению кризисом антибиотикорезистентности через:
-                </p>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-3">
-                    <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
-                    <span className="text-muted-foreground">рациональное назначение антибиотиков (только по показаниям, правильные дозы, оптимальная длительность курса)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
-                    <span className="text-muted-foreground">повышение эффективности иммунопрофилактики, чтобы снизить потребность в антибиотиках, укрепить естественный иммунитет и уменьшить распространение устойчивых к лекарствам бактерий</span>
-                  </li>
-                </ul>
                 <p className="text-muted-foreground leading-relaxed">
-                  Программа охватывает вопросы применения противомикробных химических и биологических средств и профилактики антимикробной резистентности.
+                  Эта программа посвящена управлению кризисом антибиотикорезистентности через рациональное применение антибиотиков (назначение их только по показаниям, правильные дозы, длительность) и повышению эффективности иммунопрофилактики, чтобы снизить потребность в антибиотиках, укрепляя естественный иммунитет и уменьшая распространение устойчивых к лекарствам бактерий. Программа охватывает вопросы применения противомикробных химических и биологических средств, по вопросам предупреждения распространения антимикробной резистентности.
                 </p>
               </div>
             </div>
@@ -161,18 +145,22 @@ export default function Index() {
               <div className="flex-1">
                 <h3 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">Результаты обучения</h3>
                 <p className="text-muted-foreground mb-4">После прохождения программы вы сможете:</p>
-                <div className="grid md:grid-cols-3 gap-4">
+                <div className="grid md:grid-cols-2 gap-4">
                   <Card className="p-5 border-l-4 border-l-primary hover:shadow-lg transition-shadow">
-                    <Icon name="Pill" className="text-primary mb-3" size={24} />
-                    <p className="text-sm font-medium">Рационально назначать противомикробные препараты</p>
+                    <Icon name="BookOpen" className="text-primary mb-3" size={24} />
+                    <p className="text-sm font-medium">Повышение осведомленности о рациональном применении противомикробных лекарств, их адекватной замене</p>
                   </Card>
                   <Card className="p-5 border-l-4 border-l-primary hover:shadow-lg transition-shadow">
-                    <Icon name="RefreshCw" className="text-primary mb-3" size={24} />
-                    <p className="text-sm font-medium">Корректно заменять лекарства при необходимости</p>
+                    <Icon name="FileCheck" className="text-primary mb-3" size={24} />
+                    <p className="text-sm font-medium">Навык обоснования назначения антимикробных средств и выбора АМП при внебольничных инфекциях</p>
                   </Card>
                   <Card className="p-5 border-l-4 border-l-primary hover:shadow-lg transition-shadow">
-                    <Icon name="Shield" className="text-primary mb-3" size={24} />
-                    <p className="text-sm font-medium">Снижать распространение антимикробной резистентности</p>
+                    <Icon name="Layers" className="text-primary mb-3" size={24} />
+                    <p className="text-sm font-medium">Изучение принципов комбинированного назначения антимикробных препаратов</p>
+                  </Card>
+                  <Card className="p-5 border-l-4 border-l-primary hover:shadow-lg transition-shadow">
+                    <Icon name="Activity" className="text-primary mb-3" size={24} />
+                    <p className="text-sm font-medium">Умение рационально применять антибиотики в амбулаторной практике</p>
                   </Card>
                 </div>
               </div>
